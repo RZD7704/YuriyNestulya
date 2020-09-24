@@ -21,14 +21,25 @@
     &__wrapper {
         display: flex;
         padding-top: 20px;
+        height: 400px;
+
+        @media (min-width: 992px) {
+            padding-top: 90px;
+            height: 100vh;
+        }
     }
 }
 
 .main-social {
+    right: 0;
+    bottom: 25px;
+
+    @media (min-width: 992px) {
+        bottom: 130px;
+    }
 
     &__link {
         display: block;
-        background-color: #2FCE4B;
         padding: 8px;
         border-radius: 50%;
         transition: all .5s;
@@ -36,9 +47,24 @@
         @media (min-width: 992px) {
             padding: 10px;
         }
+    }
+
+    &__link_insta {
+        background: linear-gradient(180deg, #FEB00E 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #9E100B 24.48%, rgba(255, 255, 255, 0) 100%), #A229A8;
+        transform: matrix(1, 0, 0, -1, 0, 0);
 
         &:hover {
-            background-color: #118225;
+            background: linear-gradient(180deg, #FEB00E 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(180deg, #9E100B 24.48%, rgba(255, 255, 255, 0) 100%), #A229A8;
+            transform: matrix(1, 0, 0, -1, 0, 0.2);
+
+        }
+    }
+
+    &__link_facebook {
+        background: rgba(66, 103, 178, 1);
+
+        &:hover {
+            background: rgba(66, 103, 178, 0.9);
         }
     }
 
@@ -54,6 +80,8 @@
 }
 
 .main-logo {
+    margin-left: auto;
+
     &__img {
         width: 112px;
         height: 35px;
@@ -215,7 +243,6 @@
 .main-description_desc {
     max-width: 400px;
     display: none;
-    padding-top: 65px;
 
     @media (min-width: 992px) {
         display: block;

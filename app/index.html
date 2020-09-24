@@ -15,7 +15,7 @@
 <body>
 	<section class="section-main">
 		<div class="container">
-			<div class="section-main__wrapper">
+			<div class="section-main__wrapper position-relative">
 				<div class="main-description main-description_desc">
 					<h1 class="main-description__title main-description__title_theme_light">Юрій Нестуля</h1>
 					<h2 class="main-description__subtitle main-description__subtitle_theme_light">партія “Слуга Народу”
@@ -59,26 +59,26 @@
 						</p>
 					</div>
 				</div>
-				<div class="d-flex flex-column ml-auto">
-					<div class="main-social d-flex justify-content-center mb-3">
-						<div class="main-social__item mr-4">
-							<a class="main-social__link" href="#" target="_blank">
-								<svg class="main-social__icon">
-									<use xlink:href="img/sprite.svg#insta-icon"></use>
-								</svg>
-							</a>
-						</div>
-						<div class="main-social__item">
-							<a class="main-social__link" href="#" target="_blank">
-								<svg class="main-social__icon">
-									<use xlink:href="img/sprite.svg#facebook-icon"></use>
-								</svg>
-							</a>
-						</div>
+
+				<div class="main-logo">
+					<a class="main-logo__link" href="#">
+						<img class="main-logo__img" src="img/logo.png" alt="Logo">
+					</a>
+				</div>
+
+				<div class="main-social position-absolute d-flex">
+					<div class="main-social__item mr-3 mr-md-5">
+						<a class="main-social__link main-social__link_insta" href="#" target="_blank">
+							<svg class="main-social__icon">
+								<use xlink:href="img/sprite.svg#insta-icon"></use>
+							</svg>
+						</a>
 					</div>
-					<div class="main-logo">
-						<a class="main-logo__link" href="#">
-							<img class="main-logo__img" src="img/logo.png" alt="Logo">
+					<div class="main-social__item">
+						<a class="main-social__link main-social__link_facebook" href="#" target="_blank">
+							<svg class="main-social__icon">
+								<use xlink:href="img/sprite.svg#facebook-icon"></use>
+							</svg>
 						</a>
 					</div>
 				</div>
