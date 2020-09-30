@@ -322,21 +322,27 @@
     position: fixed;
     right: 30px;
     bottom: 55px;
+    background-color: #2FCE4B;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    transition: all .5s;
+
+    &:hover {
+        background-color: #118225;
+    }
 
     @media (min-width: 992px) {
         display: none;
     }
 
     &__link {
-        display: block;
-        background-color: #2FCE4B;
-        padding: 10px;
-        border-radius: 50%;
-        transition: all .5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
 
-        &:hover {
-            background-color: #118225;
-        }
+
     }
 
     &__icon {
